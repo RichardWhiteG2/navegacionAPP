@@ -22,7 +22,17 @@ export const styles = StyleSheet.create({
     botonGrandeTexto: {
         color:'white',
         fontSize:18,
-        fontWeight: 'bold'
-        
+        fontWeight: 'bold'    
+    },
+    avatar:{
+        width:150,
+        height:150,
+        borderRadius:100
+    },
+    avatarContainer:{
+        backgroundColor:'white',
+        alignItems:'center',
+        marginTop:40,
+        marginBottom:10
     }
 })

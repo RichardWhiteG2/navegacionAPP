@@ -5,13 +5,14 @@ import React from 'react'
 import { View } from 'react-native';
 import { MenuLateralBasico } from './src/navigator/MenuLateralBasico';
 import { StackNavigator } from './src/navigator/NavigatorStack';
+import { MenuLateral } from './src/navigator/MenuLateral';
 
 const App = () => {
   return (
     <NavigationContainer>
       
-        <MenuLateralBasico/>
-
+        {/* <MenuLateralBasico/> */}
+        <MenuLateral/>
       
         {/* <StackNavigator/> */}
       
