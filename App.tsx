@@ -10,10 +10,10 @@ const App = () => {
   return (
     <NavigationContainer>
       
-        {/* <MenuLateralBasico/> */}
+        <MenuLateralBasico/>
 
       
-        <StackNavigator/>
+        {/* <StackNavigator/> */}
       
     </NavigationContainer>
   )
