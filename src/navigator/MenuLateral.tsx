@@ -6,6 +6,7 @@ import { StackNavigator } from './NavigatorStack';
 import { Image, Text, useWindowDimensions, View } from 'react-native';
 import { styles } from '../theme/appTheme';
 import { Tabs } from './Tabs';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 
 const Drawer = createDrawerNavigator();
@@ -23,7 +24,7 @@ export const MenuLateral = () => {
       drawerContent={(props) => <CustomDrawerContent {...props} />}
     >
       
-      <Drawer.Screen name="Tabs" component={Tabs} />
+      <Drawer.Screen name="Tabs" component={Tabs} options={{drawerIcon:(props)=><Text><Icon name="airplane-outline" size={30} color="#900" /></Text>}}/>
       <Drawer.Screen name="SettingsScreen" component={SettingsScreen} />
     </Drawer.Navigator>
   );

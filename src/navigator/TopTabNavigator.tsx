@@ -7,7 +7,7 @@ import { AlbumsScreen } from '../screens/AlbumsScreen';
 import { ChatScreen } from '../screens/ChatScreen';
 import { ContactsScreen } from '../screens/ContactsScreen';
 import { Colores } from '../theme/appTheme';
-
+import Icon from 'react-native-vector-icons/Ionicons';
 const Tab = createMaterialTopTabNavigator();
 
 export const TopTabNavigator = () => {
@@ -34,7 +34,7 @@ export const TopTabNavigator = () => {
         
     >
       <Tab.Screen name="ChatScreen" component={ChatScreen} />
-      <Tab.Screen name="ContactsScreen" component={ContactsScreen} />
+      <Tab.Screen name="ContactsScreen" component={ContactsScreen} options={{tabBarIcon:(props)=><Icon name="airplane-outline" size={30} color="#900" />}} />
       <Tab.Screen name="AlbumsScreen" component={AlbumsScreen} />
     </Tab.Navigator>
   );

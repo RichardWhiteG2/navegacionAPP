@@ -4,6 +4,8 @@ import { StackScreenProps } from '@react-navigation/stack'
 import React, { useEffect } from 'react'
 import { Button, Text, View, TouchableOpacity } from 'react-native'
 import { styles } from '../theme/appTheme'
+import Icon from 'react-native-vector-icons/Ionicons';
+
 
 interface Props extends StackScreenProps<any, any>{};
 // interface Props extends DrawerScreenProps<any, any>{};
@@ -44,6 +46,7 @@ export const Pagina1Screen = ({navigation}: Props) => {
             })}
             >
             <Text style={styles.botonGrandeTexto}>Pedro</Text>
+            <Text><Icon name="airplane-outline" size={30} color="#900" /></Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={ styles.botonGrande}
@@ -54,6 +57,7 @@ export const Pagina1Screen = ({navigation}: Props) => {
             })}
           >
             <Text style={styles.botonGrandeTexto}>Maria</Text>
+            <Text><Icon name="airplane-outline" size={30} color="#900" /></Text>
           </TouchableOpacity>
         </View>
         {/* <Button

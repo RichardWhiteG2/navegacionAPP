@@ -7,6 +7,8 @@ import { StackNavigator } from './NavigatorStack';
 import { Colores } from '../theme/appTheme';
 import { Platform, Text } from 'react-native';
 import { TopTabNavigator } from './TopTabNavigator';
+import Icon from 'react-native-vector-icons/Ionicons';
+
 
 
 //Codigo para diferencias entre plataformas
@@ -25,9 +27,9 @@ const  TabsAndroid = () => {
       sceneAnimationEnabled={ true}
       barStyle={{backgroundColor:Colores.primary}}
     >
-      <BottomTabAndroid.Screen name="Tab1Screen" options={{title:'Tab1', tabBarIcon:(props)=> <Text>T1</Text>}}component={Tab1Screen} />
-      <BottomTabAndroid.Screen name="TopTabNavigator" options={{title:'Tab2', tabBarIcon:(props)=> <Text>T2</Text>}}component={TopTabNavigator} />
-      <BottomTabAndroid.Screen name="StackNavigator" options={{title:'Stack',tabBarIcon:(props)=> <Text>St</Text>}}component={StackNavigator} />
+      <BottomTabAndroid.Screen name="Tab1Screen" options={{title:'Tab1', tabBarIcon:(props)=> <Text><Icon name="airplane-outline" size={30} color="#900" /></Text>}}component={Tab1Screen} />
+      <BottomTabAndroid.Screen name="TopTabNavigator" options={{title:'Tab2', tabBarIcon:(props)=> <Text><Icon name="airplane-outline" size={30} color="#900" /></Text>}}component={TopTabNavigator} />
+      <BottomTabAndroid.Screen name="StackNavigator" options={{title:'Stack',tabBarIcon:(props)=> <Text><Icon name="airplane-outline" size={30} color="#900" /></Text>}}component={StackNavigator} />
     </BottomTabAndroid.Navigator>
   );
 }
@@ -47,9 +49,9 @@ export const TabsIOS = () => {
     }}
     sceneContainerStyle={{backgroundColor:"white"}}
     >
-      <BottomTabIOS.Screen name="Tab1Screen" options={{title:'Tab1', tabBarIcon:(props)=> <Text>T1</Text>}}component={Tab1Screen} />
-      <BottomTabIOS.Screen name="TopTabNavigator" options={{title:'Tab2', tabBarIcon:(props)=> <Text>T2</Text>}}component={TopTabNavigator} />
-      <BottomTabIOS.Screen name="StackNavigator" options={{title:'Stack',tabBarIcon:(props)=> <Text>St</Text>}}component={StackNavigator} />
+      <BottomTabIOS.Screen name="Tab1Screen" options={{title:'Tab1', tabBarIcon:(props)=> <Text><Icon name="airplane-outline" size={30} color="#900" /></Text>}}component={Tab1Screen} />
+      <BottomTabIOS.Screen name="TopTabNavigator" options={{title:'Tab2', tabBarIcon:(props)=> <Text><Icon name="airplane-outline" size={30} color="#900" /></Text>}}component={TopTabNavigator} />
+      <BottomTabIOS.Screen name="StackNavigator" options={{title:'Stack',tabBarIcon:(props)=> <Text><Icon name="airplane-outline" size={30} color="#900" /></Text>}}component={StackNavigator} />
       
     </BottomTabIOS.Navigator>
   );
