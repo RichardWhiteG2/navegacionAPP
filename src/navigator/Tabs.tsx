@@ -42,10 +42,11 @@ export const TabsIOS = () => {
   return (
     <BottomTabIOS.Navigator
     screenOptions={{ 
-        
+        headerShown:false,
         tabBarActiveTintColor: Colores.primary,
         tabBarStyle: { borderTopColor: Colores.primary , borderTopWidth:10, elevation:0},
         tabBarLabelStyle: {fontSize:20}
+        
     }}
     sceneContainerStyle={{backgroundColor:"white"}}
     >
