@@ -6,17 +6,30 @@ import { View } from 'react-native';
 import { MenuLateralBasico } from './src/navigator/MenuLateralBasico';
 import { StackNavigator } from './src/navigator/NavigatorStack';
 import { MenuLateral } from './src/navigator/MenuLateral';
+import { AuthProvider } from './src/context/AuthContext';
 
 const App = () => {
   return (
     <NavigationContainer>
-      
-        {/* <MenuLateralBasico/> */}
-        <MenuLateral/>
-      
-        {/* <StackNavigator/> */}
+        <AppState>
+          {/* <MenuLateralBasico/> */}
+        
+          {/* <StackNavigator/> */}
+
+          <MenuLateral/>
+
+        </AppState>
       
     </NavigationContainer>
   )
 }
+
+const AppState= ({ children }:any ) => {
+  return(
+    <AuthProvider>
+      {children}
+    </AuthProvider>
+  )
+}
+
 export default App;
